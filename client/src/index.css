@@ -1,2 +1,7 @@
 /** @format */
 @import '~antd/dist/antd.css';
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}

@@ -1,12 +1,19 @@
-import React from 'react'
+/** @format */
 
-const UserItem = ({ user}) => {
-    const { name, email, phone } = user; 
-    return (
-        <div className='alert alert-secondary'>
-            {name}
-        </div>
-    )
-}
+import React from 'react';
 
-export default UserItem
+const UserItem = ({ user }) => {
+	const { name, email, phone, assignedCompanies } = user;
+	return (
+		<div className='alert alert-secondary flex-column'>
+			<div>
+				{name} {email}
+			</div>
+			<div>
+				{phone} {assignedCompanies}
+			</div>
+		</div>
+	);
+};
+
+export default UserItem;
